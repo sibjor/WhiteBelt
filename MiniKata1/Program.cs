@@ -1,6 +1,6 @@
 ﻿namespace Kata2;
 
-class Program
+class Program // This one is verified as redundant, will follow practices mentioned in class for next belt..
 {
     static void Main(string[] args)
     {
@@ -8,7 +8,7 @@ class Program
     }
 
 
-    class Character
+    class Character // should be in a separate document?
     {
         public Character
         ( // Parameters below
