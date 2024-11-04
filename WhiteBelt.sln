@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata1", "Kata1\Kata1.csproj", "{6EF75CA7-5DA0-4A87-8356-AC311205E2A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata2", "Kata2\Kata2.csproj", "{5D6167BB-171D-47C2-89EA-74262CFCD8B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniKata1", "MiniKata1\MiniKata1.csproj", "{5D6167BB-171D-47C2-89EA-74262CFCD8B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata3", "Kata3\Kata3.csproj", "{8C31016D-6C03-43E7-BE6D-BBA2C90290E4}"
 EndProject
