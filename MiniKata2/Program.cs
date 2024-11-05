@@ -21,7 +21,7 @@ class Program
         // using the Convert class
         Console.WriteLine($"Health points from double to int: {Convert.ToInt32(healthPointsDouble)}");
 
-        try
+        try // instead of TryParse
         {
             // parsing a string to a double
             Console.WriteLine($"Currency amount from string to double: {double.Parse(currencyAmount)}");
