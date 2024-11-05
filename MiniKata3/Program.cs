@@ -6,7 +6,9 @@ class Program
     {
         int playerLuck = 5;
         Console.WriteLine("You encounter an enemy! Do you want to attempt an attack? (y/n)");
-        if (Console.ReadLine() == "y")
+        string input = "";
+        input = Console.ReadLine();
+        if (input.ToLower() == "y")
         {
             if (playerLuck > 7)
             {
@@ -21,7 +23,7 @@ class Program
                 Console.WriteLine("Attack missed");
             }
         }
-        else if (Console.ReadLine() == "n")
+        else if (input.ToLower() == "n")
         {
             Console.WriteLine("The player retreated...");
         }
