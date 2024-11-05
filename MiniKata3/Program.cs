@@ -23,7 +23,7 @@ class Program
         }
         else if (Console.ReadLine() == "n")
         {
-            Console.WriteLine("The player wished not to attack...");
+            Console.WriteLine("The player retreated...");
         }
         else
         {
