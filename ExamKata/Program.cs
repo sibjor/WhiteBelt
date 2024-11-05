@@ -13,7 +13,7 @@ class Program
         int enemyDamage = 30;
         int enemyHealth = 80;
         int enemyMaximumHealth = 80;
-        int enemyHeal = 15;
+        int enemyHeal = 10;
         string enemyName = "Enemy";
 
         int playerInput;
@@ -34,8 +34,30 @@ class Program
                 while (playerHealth < playerMaximumHealth)
                 {
                     playerHealth += playerHeal;
-                    // see to it that its never higher than playerMaximumHealth!
+                    if (playerHealth > playerMaximumHealth)
+                    {
+                        playerHealth = playerMaximumHealth;
+                    }
+                    Console.WriteLine($"{playerName} chooses to heal. Current health: {playerHealth}");
                 }
+            }
+            else
+            {
+                Console.WriteLine("Invalid input.");
+            }
+
+            playerHealth -= enemyDamage;
+            Console.WriteLine($"{enemyName} attacks {playerName} dealing {enemyDamage} of damage");
+            if (playerHealth <= 0)
+            {
+                Console.WriteLine($"{playerName} dies");
+                break;
+            }
+
+            if (enemyHealth <= 0)
+            {
+                Console.WriteLine($"{enemyName} dies");
+                break;
             }
         }
     }
