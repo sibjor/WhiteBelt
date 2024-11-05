@@ -20,9 +20,17 @@ class Program
         
         // using the Convert class
         Console.WriteLine($"Health points from double to int: {Convert.ToInt32(healthPointsDouble)}");
+
+        try
+        {
+            // parsing a string to a double
+            Console.WriteLine($"Currency amount from string to double: {double.Parse(currencyAmount)}");
+        }
+        catch
+        {
+            Console.WriteLine("Parse from string to double invalid");
+        }
         
-        // parsing a string to a double
-        Console.WriteLine($"Currencty amount from string to double: {double.Parse(currencyAmount)}");
         
         // safe conversion example
         
